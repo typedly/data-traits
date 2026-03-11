@@ -1,5 +1,5 @@
 {
-  "name": "@typedly/configurable-data",
+  "name": "@typedly/data-traits",
   "version": "1.0.0-beta",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "A TypeScript type definitions package for configurable data traits, providing various kinds of configurable data interfaces.",
@@ -15,15 +15,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/typedly/configurable-data.git"
+    "url": "git+https://github.com/typedly/data-traits.git"
   },
   "bugs": {
-    "url": "https://github.com/typedly/configurable-data/issues"
+    "url": "https://github.com/typedly/data-traits/issues"
   },
   "keywords": [
     "@typedly",
     "@typedly/data",
-    "@typedly/configurable-data"
+    "@typedly/data-traits",
+    "Data Traits",
+    "Configurable Data",
+    "Adaptable Data",
+    "Comparable Data",
+    "Encryptable Data",
+    "Resettable Data",
+    "Serializable Data",
+    "Timestamped Data",
+    "Transformable Data",
+    "Validatable Data"
   ],
   "funding": [
     {
