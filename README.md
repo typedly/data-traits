@@ -28,9 +28,11 @@ A **TypeScript** type definitions package for configurable data traits, providin
 - [Api](#api)
   - Interface
     - [`Adaptable`](#adaptable)
+    - [`Cacheable`](#cacheable)
     - [`Comparable`](#comparable)
     - [`Configurable`](#configurable)
     - [`Encryptable`](#encryptable)
+    - [`Exportable`](#exportable)
     - [`Resettable`](#resettable)
     - [`Serializable`](#serializable)
     - [`Timestamped`](#timestamped)
@@ -67,9 +69,11 @@ npm install @typedly/data-traits --save-peer
 import {
   // Interface.
   Adaptable,
+  Cacheable,
   Comparable,
   Configurable,
   Encryptable,
+  Exportable,
   Resettable,
   Serializable,
   Timestamped,
@@ -89,6 +93,16 @@ import { Adaptable } from '@typedly/data-traits';
 ```
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/adaptable.interface.ts)
+
+### `Cacheable`
+
+The interface for cacheable data types, which can be cached with an optional expiration time and invalidated or refreshed as needed.
+
+```typescript
+import { Cacheable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/cacheable.interface.ts)
 
 ### `Comparable`
 
@@ -119,6 +133,16 @@ import { Encryptable } from '@typedly/data-traits';
 ```
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/encryptable.interface.ts)
+
+### `Exportable`
+
+The interface for exportable data types, which can be exported to various formats.
+
+```typescript
+import { Exportable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/exportable.interface.ts)
 
 ### `Freezable`
 
