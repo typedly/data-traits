@@ -16,5 +16,5 @@ export interface Adaptable<A = any> {
    * @description Checks if the `Data` instance has an adapter.
    * @returns {boolean} True if an adapter is present, false otherwise.
    */
-  hasAdapter(): boolean;
+  hasAdapter?(): boolean;
 }
