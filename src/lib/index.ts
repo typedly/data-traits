@@ -1,7 +1,9 @@
 export type { Adaptable } from './adaptable.interface';
+export type { Cacheable } from './cacheable.interface';
 export type { Comparable } from './comparable.interface';
 export type { Configurable } from './configurable.interface';
 export type { Encryptable } from './encryptable.interface';
+export type { Exportable } from './exportable.interface';
 export type { Resettable } from './resettable.interface';
 export type { Serializable } from './serializable.interface';
 export type { Timestamped } from './timestamped.interface';
