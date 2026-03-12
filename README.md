@@ -1,7 +1,7 @@
 <a href="https://github.com/typescript-package">
   <img
     src="https://avatars.githubusercontent.com/u/189665258?s=150&u=712e292bae048947d1f7d2020d7d38875c40e63a&v=4"
-    title="@typedly/data-traits - description"
+    title="@typedly/data-traits - A TypeScript type definitions package for configurable data traits, providing various kinds of configurable data interfaces."
   />
 </a>
 
@@ -12,7 +12,7 @@
 [![GitHub issues][typedly-badge-issues]][typedly-issues]
 [![GitHub license][typedly-badge-license]][typedly-license]
 
-A **TypeScript** type definitions for data traits.
+A **TypeScript** type definitions package for configurable data traits, providing various kinds of configurable data interfaces.
 
 ## Features
 
@@ -28,9 +28,14 @@ A **TypeScript** type definitions for data traits.
 - [Api](#api)
   - Interface
     - [`Adaptable`](#adaptable)
+    - [`Comparable`](#comparable)
     - [`Configurable`](#configurable)
+    - [`Encryptable`](#encryptable)
+    - [`Resettable`](#resettable)
     - [`Serializable`](#serializable)
+    - [`Timestamped`](#timestamped)
     - [`Transformable`](#transformable)
+    - [`Validatable`](#validatable)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -46,7 +51,7 @@ A **TypeScript** type definitions for data traits.
 - **[@typedly/collection](https://github.com/typedly/collection)**: A **TypeScript** type definitions package for data collections with customizable storage.
 - **[@typedly/configurable-data](https://github.com/typedly/configurable-data)**: A **TypeScript** type definitions for configurable data.
 - **[@typedly/data-adapter](https://github.com/typedly/data-adapter)**: A **TypeScript** type definitions for data adapter.
-- **[@typedly/data-traits](https://github.com/typedly/data-traits)**: A **TypeScript** type definitions for data traits.
+- **[@typedly/data](https://github.com/typedly/data)**: A **TypeScript** type definitions for [`@typescript-package/data`](https://github.com/typedly/data).
 - **[@typescript-package/data](https://github.com/typescript-package/data)**: A lightweight **TypeScript** library for basic data management.
 - **[@typescript-package/collection](https://github.com/typescript-package/collection)**: A lightweight **TypeScript** library for data collection.
 
@@ -77,6 +82,8 @@ import {
 
 ### `Adaptable`
 
+The interface for adaptable data types, which can optionally use a data adapter to manage their value and behavior.
+
 ```typescript
 import { Adaptable } from '@typedly/data-traits';
 ```
@@ -84,6 +91,8 @@ import { Adaptable } from '@typedly/data-traits';
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/adaptable.interface.ts)
 
 ### `Comparable`
+
+Comparable interface for data types that can be compared.
 
 ```typescript
 import { Comparable } from '@typedly/data-traits';
@@ -93,6 +102,8 @@ import { Comparable } from '@typedly/data-traits';
 
 ### `Configurable`
 
+The interface for configurable data types, which can optionally have a configuration object.
+
 ```typescript
 import { Configurable } from '@typedly/data-traits';
 ```
@@ -100,6 +111,8 @@ import { Configurable } from '@typedly/data-traits';
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/configurable.interface.ts)
 
 ### `Encryptable`
+
+Interface for data types that can be encrypted and decrypted.
 
 ```typescript
 import { Encryptable } from '@typedly/data-traits';
@@ -109,6 +122,8 @@ import { Encryptable } from '@typedly/data-traits';
 
 ### `Freezable`
 
+The interface for freezable data types, which can be frozen to prevent modifications and optionally unfrozen.
+
 ```typescript
 import { Freezable } from '@typedly/data-traits';
 ```
@@ -116,6 +131,8 @@ import { Freezable } from '@typedly/data-traits';
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/freezable.interface.ts)
 
 ### `Resettable`
+
+Interface for data types that can be reset to an initial value and track if they have been modified (dirty state).
 
 ```typescript
 import { Resettable } from '@typedly/data-traits';
@@ -125,6 +142,8 @@ import { Resettable } from '@typedly/data-traits';
 
 ### `Serializable`
 
+Serializable interface for data types that can be serialized and deserialized.
+
 ```typescript
 import { Serializable } from '@typedly/data-traits';
 ```
@@ -132,6 +151,8 @@ import { Serializable } from '@typedly/data-traits';
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/serializable.interface.ts)
 
 ### `Timestamped`
+
+Interface representing timestamped data.
 
 ```typescript
 import { Timestamped } from '@typedly/data-traits';
@@ -141,6 +162,8 @@ import { Timestamped } from '@typedly/data-traits';
 
 ### `Transformable`
 
+Transformable interface for data types that can be transformed.
+
 ```typescript
 import { Transformable } from '@typedly/data-traits';
 ```
@@ -148,6 +171,8 @@ import { Transformable } from '@typedly/data-traits';
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/transformable.interface.ts)
 
 ### `Validatable`
+
+Interface for data types that can be validated with custom rules and track validation errors.
 
 ```typescript
 import { Validatable } from '@typedly/data-traits';
