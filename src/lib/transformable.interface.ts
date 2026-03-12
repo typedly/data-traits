@@ -1,7 +1,5 @@
-import {
-  // Type.
-  AsyncReturn,
-} from "@typedly/data";
+// Type.
+import { AsyncReturn } from "@typedly/data";
 /**
  * @description Transformable interface for data types that can be transformed.
  * @export

@@ -1,7 +1,5 @@
-import {
-  // Type.
-  AsyncReturn,
-} from "@typedly/data";
+// Type.
+import { AsyncReturn } from "@typedly/data";
 /**
  * @description Interface for data types that can be reset to an initial value and track if they have been modified (dirty state).
  * @export
