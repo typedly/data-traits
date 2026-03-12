@@ -1,41 +1,46 @@
 /**
- * @description 
- */
-
-/**
  * @description Trait for objects that support pagination.
  * @export
  * @interface Paginated
- * @template [T=any] 
+ * @template [T=unknown] The type of items in the paginated collection.
  */
-export interface Paginated<T = any> {
+export interface Paginated<T = unknown> {
   /**
-   * Returns the current page of items.
+   * @description Total number of pages.
+   * @readonly
+   * @type {number}
    */
-  getPage(): T[];
+  readonly pageCount: number;
 
   /**
-   * Advances to the next page and returns its items.
-   */
-  nextPage(): T[];
-
-  /**
-   * Moves to the previous page and returns its items.
-   */
-  previousPage(): T[];
-
-  /**
-   * Number of items per page.
+   * @description Number of items per page.
+   * @readonly
+   * @type {number}
    */
   readonly pageSize: number;
 
   /**
-   * Current page index, starting from 0.
+   * @description Current page index, starting from 0.
+   * @readonly
+   * @type {number}
    */
   readonly pageIndex: number;
 
   /**
-   * Total number of pages.
+   * @description Returns the current page of items.
+   * @returns {T[]} 
    */
-  readonly pageCount: number;
+  getPage(): T[];
+
+  /**
+   * @description Advances to the next page and returns its items.
+   * @returns {T[]} 
+   */
+  nextPage(): T[];
+
+  /**
+   * @description Goes back to the previous page and returns its items.
+   * @returns {T[]} 
+   */
+  previousPage(): T[];
 }
