@@ -1,8 +1,12 @@
-import {
-  // Type.
-  AsyncReturn,
-} from "@typedly/data";
-
+// Type.
+import { AsyncReturn } from "@typedly/data";
+/**
+ * @description The interface for freezable data types, which can be frozen to prevent modifications and optionally unfrozen.
+ * @export
+ * @interface Freezable
+ * @template [T=any] The data type that can be frozen, used for optional checks in `isFrozen`.
+ * @template {boolean} [R=false] Whether the freeze/unfreeze operations are asynchronous.
+ */
 export interface Freezable<T = any, R extends boolean = false> {  
   /**
    * @description Freezes the data, preventing modifications.
