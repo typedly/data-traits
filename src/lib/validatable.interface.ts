@@ -16,7 +16,7 @@ export interface Validatable<T, R extends boolean = false> {
 
   /**
    * @description Checks if the current value is valid without throwing.
-   * @returns {boolean}
+   * @returns {boolean} True if valid, false otherwise.
    */
   isValid(): boolean;
 
