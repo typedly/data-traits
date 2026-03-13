@@ -16,10 +16,31 @@ A **TypeScript** type definitions package for configurable data traits, providin
 
 ## Features
 
-- **Adaptable**: 
-- **Configurable**: 
-- **Serializable**: 
-- **Transformable**: 
+- **Adaptable**: Use custom adapters to define how data is stored and retrieved (localStorage, API, memory, etc.)
+- **Cacheable**: Built-in caching support with configurable expiration and refresh capabilities
+- **Collection**: Base collection shape
+- **Comparable**: Compare data instances for equality and ordering
+- **Compressible**: Compress and decompress data
+- **Configurable**: Flexible configuration system for customizing data behavior and constraints
+- **Encryptable**: Encrypt and decrypt sensitive data with built-in security support
+- **Exportable**: Export data to multiple formats (JSON, XML, CSV, etc.)
+- **Freezable**: Control immutability by freezing and unfreezing data instances
+- **Identifiable**: Identify data object by tag or `ID`
+- **Indexable**: Access and manage data elements by numeric or key-based indices
+- **Measurable**: Track data size, memory usage, and performance metrics
+- **Mergeable**: Merge data from multiple sources with customizable merge strategies
+- **Observable**: Subscribe to data changes with reactive programming support
+- **Paginated**: Navigate large datasets with page-based chunking and iteration
+- **Persistable**: Persist data to storage automatically with save/load capabilities
+- **Printable**: Format and output data in human-readable formats for display or debugging
+- **Queryable**: Query and filter complex data structures with predicate functions
+- **Resettable**: Reset data to initial state and track modifications
+- **Revertible**: Undo changes and revert to previous states with rollback support
+- **Serializable**: Serialize and deserialize data values with async support
+- **Timestamped**: Automatic tracking of creation, modification, and access times
+- **Transformable**: Transform data with map, clone, and functional operations
+- **Validatable**: Comprehensive validation system with custom validators and error reporting
+- **Versionable**: Version control with history tracking, snapshots, and rollback support
 
 ## Table of contents
 
@@ -30,14 +51,27 @@ A **TypeScript** type definitions package for configurable data traits, providin
     - [`Adaptable`](#adaptable)
     - [`Cacheable`](#cacheable)
     - [`Comparable`](#comparable)
+    - [`Compressible`](#compressible)
     - [`Configurable`](#configurable)
     - [`Encryptable`](#encryptable)
     - [`Exportable`](#exportable)
+    - [`Freezable`](#freezable)
+    - [`Identifiable`](#identifiable)
+    - [`Indexable`](#indexable)
+    - [`Measureable`](#measureable)
+    - [`Mergeable`](#mergeable)
+    - [`Observable`](#observable)
+    - [`Paginated`](#paginated)
+    - [`Persistable`](#persistable)
+    - [`Printable`](#printable)
+    - [`Queryable`](#queryable)
     - [`Resettable`](#resettable)
+    - [`Revertible`](#revertible)
     - [`Serializable`](#serializable)
     - [`Timestamped`](#timestamped)
     - [`Transformable`](#transformable)
     - [`Validatable`](#validatable)
+    - [`Versionable`](#versionable)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -70,15 +104,29 @@ import {
   // Interface.
   Adaptable,
   Cacheable,
+  Collection,
   Comparable,
+  Compressible,
   Configurable,
   Encryptable,
   Exportable,
+  Freezable,
+  Identifiable,
+  Indexable,
+  Measurable,
+  Mergeable,
+  Observable,
+  Paginated,
+  Persistable,
+  Printable,
+  Queryable,
   Resettable,
+  Revertible,
   Serializable,
   Timestamped,
   Transformable,
   Validatable,
+  Versionable,
 } from '@typedly/data-traits';
 ```
 
@@ -104,6 +152,16 @@ import { Cacheable } from '@typedly/data-traits';
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/cacheable.interface.ts)
 
+### `Collection`
+
+Comparable interface for data types that can be compared.
+
+```typescript
+import { Collection } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/collection.interface.ts)
+
 ### `Comparable`
 
 Comparable interface for data types that can be compared.
@@ -113,6 +171,16 @@ import { Comparable } from '@typedly/data-traits';
 ```
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/comparable.interface.ts)
+
+### `Compressible`
+
+Interface for data types that can be compressed and decompressed, allowing for efficient storage and transmission of data.
+
+```typescript
+import { Compressible } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/compressible.interface.ts)
 
 ### `Configurable`
 
@@ -154,6 +222,96 @@ import { Freezable } from '@typedly/data-traits';
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/freezable.interface.ts)
 
+### `Identifiable`
+
+Trait for objects that have an ID or unique identifier.x
+
+```typescript
+import { Identifiable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/identifiable.interface.ts)
+
+### `Indexable`
+
+Trait for objects that support indexing or retrieving by `numeric` or `string` index.
+
+```typescript
+import { Indexable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/indexable.interface.ts)
+
+### `Measureable`
+
+Interface for data types that can be measured in terms of size and memory usage, allowing for efficient management of resources and optimization of performance.
+
+```typescript
+import { Measureable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/measureable.interface.ts)
+
+### `Mergeable`
+
+The interface for mergeable data types, which can be combined with other instances of the same type using a defined strategy.
+
+```typescript
+import { Mergeable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/mergeable.interface.ts)
+
+### `Observable`
+
+The interface for observable data types, which allow subscribers to be notified of changes to their value.
+
+```typescript
+import { Observable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/observable.interface.ts)
+
+### `Paginated`
+
+Trait for objects that support pagination.
+
+```typescript
+import { Paginated } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/paginated.interface.ts)
+
+### `Persistable`
+
+Trait for objects that can be persisted and restored.
+
+```typescript
+import { Persistable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/persistable.interface.ts)
+
+### `Printable`
+
+Trait for objects that can be printed as a `string` or in a formatted way.
+
+```typescript
+import { Printable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/printable.interface.ts)
+
+### `Queryable`
+
+Interfaces for data types that can be queried using a defined query format, allowing for flexible and efficient retrieval of information based on specific criteria.
+
+```typescript
+import { Queryable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/queryable.interface.ts)
+
 ### `Resettable`
 
 Interface for data types that can be reset to an initial value and track if they have been modified (dirty state).
@@ -163,6 +321,16 @@ import { Resettable } from '@typedly/data-traits';
 ```
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/resettable.interface.ts)
+
+### `Revertible`
+
+Trait for objects that can revert or undo changes.
+
+```typescript
+import { Revertible } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/revertible.interface.ts)
 
 ### `Serializable`
 
@@ -203,6 +371,16 @@ import { Validatable } from '@typedly/data-traits';
 ```
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/validatable.interface.ts)
+
+### `Versionable`
+
+The interface for versionable data types, which maintain a history of changes and can revert to previous versions.
+
+```typescript
+import { Versionable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/versionable.interface.ts)
 
 ## Contributing
 
