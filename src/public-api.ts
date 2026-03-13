@@ -6,6 +6,8 @@ export type {
   Adaptable,
 
   Cacheable,
+  Cleanable,
+  Cloneable,
   Collection,
   Comparable,
   Compressible,

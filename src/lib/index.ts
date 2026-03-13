@@ -1,8 +1,8 @@
 export type { Adaptable } from './adaptable.trait';
 export type { Cacheable } from './cacheable.trait';
+export type { Cleanable } from './cleanable.trait';
+export type { Cloneable } from './cloneable.trait';
 export type { Collection } from './collection.trait';
-// export type { Cleanable } from './cleanable.trait';
-// export type { Cloneable } from './cloneable.trait';
 export type { Comparable } from './comparable.trait';
 export type { Compressible } from './compressible.trait';
 export type { Configurable } from './configurable.trait';
