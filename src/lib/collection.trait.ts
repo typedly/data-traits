@@ -4,12 +4,10 @@ import { AsyncReturn } from "@typedly/data";
  * @description Trait for collection-like data types that can hold multiple items and provide methods for adding, deleting, and iterating over those items.
  * @export
  * @interface Collection
- * @template {Iterable<E>} T The data type, which must be an iterable of elements of type `E`.
  * @template E Element type contained in the collection.
  * @template {boolean} [R=false] whether the methods return a `Promise` or not.
  */
 export interface Collection<
-  T extends Iterable<E>,
   E,
   R extends boolean = false,
 > extends Iterable<E>, AsyncIterable<E> {
@@ -35,11 +33,11 @@ export interface Collection<
 
   /**
    * @description Executes a provided function once for each collection element.
-   * @param {(element: E, collection: Collection<T, E, R>) => void} callbackfn Function to execute for each element.
+   * @param {(element: E, collection: Collection<E, R>) => void} callbackfn Function to execute for each element.
    * @param {?*} [thisArg] Value to use as `this` when executing `callbackfn`.
    * @returns {AsyncReturn<R, this>} 
    */
-  forEach(callbackfn: (element: E, collection: Collection<T, E, R>) => void, thisArg?: any): AsyncReturn<R, this>;
+  forEach(callbackfn: (element: E, collection: Collection<E, R>) => void, thisArg?: any): AsyncReturn<R, this>;
 
   /**
    * @description Checks if every item exists in the collection.
