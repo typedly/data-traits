@@ -13,18 +13,19 @@ export interface Paginated<T = unknown> {
   readonly pageCount: number;
 
   /**
+   * @description Current page index, starting from 0.
+   * @readonly
+   * @type {number}
+   */
+  readonly pageIndex: number;
+
+  /**
    * @description Number of items per page.
    * @readonly
    * @type {number}
    */
   readonly pageSize: number;
 
-  /**
-   * @description Current page index, starting from 0.
-   * @readonly
-   * @type {number}
-   */
-  readonly pageIndex: number;
 
   /**
    * @description Returns the current page of items.
