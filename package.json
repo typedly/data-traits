@@ -1,6 +1,6 @@
 {
   "name": "@typedly/data-traits",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "A TypeScript type definitions package for configurable data traits, providing various kinds of configurable data interfaces.",
   "license": "MIT",
