@@ -145,7 +145,7 @@ The interface for adaptable data types, which can optionally use a data adapter 
 import { Adaptable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/adaptable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/adaptable.trait.ts)
 
 ### `Cacheable`
 
@@ -155,7 +155,7 @@ The interface for cacheable data types, which can be cached with an optional exp
 import { Cacheable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/cacheable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/cacheable.trait.ts)
 
 ### `Cleanable`
 
@@ -165,7 +165,7 @@ Capability for objects that can be cleaned or cleared.
 import { Cleanable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/cleanable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/cleanable.trait.ts)
 
 ### `Cloneable`
 
@@ -175,7 +175,7 @@ Capability for objects that can be cloned.
 import { Cloneable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/cloneable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/cloneable.trait.ts)
 
 ### `Collection`
 
@@ -185,7 +185,7 @@ Comparable interface for data types that can be compared.
 import { Collection } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/collection.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/collection.trait.ts)
 
 ### `Comparable`
 
@@ -195,7 +195,7 @@ Comparable interface for data types that can be compared.
 import { Comparable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/comparable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/comparable.trait.ts)
 
 ### `Compressible`
 
@@ -205,7 +205,7 @@ Interface for data types that can be compressed and decompressed, allowing for e
 import { Compressible } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/compressible.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/compressible.trait.ts)
 
 ### `Configurable`
 
@@ -215,7 +215,7 @@ The interface for configurable data types, which can optionally have a configura
 import { Configurable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/configurable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/configurable.trait.ts)
 
 ### `Encryptable`
 
@@ -225,7 +225,7 @@ Interface for data types that can be encrypted and decrypted.
 import { Encryptable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/encryptable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/encryptable.trait.ts)
 
 ### `Exportable`
 
@@ -235,7 +235,7 @@ The interface for exportable data types, which can be exported to various format
 import { Exportable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/exportable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/exportable.trait.ts)
 
 ### `Freezable`
 
@@ -245,7 +245,7 @@ The interface for freezable data types, which can be frozen to prevent modificat
 import { Freezable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/freezable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/freezable.trait.ts)
 
 ### `Identifiable`
 
@@ -255,7 +255,7 @@ Trait for objects that have an ID or unique identifier.x
 import { Identifiable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/identifiable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/identifiable.trait.ts)
 
 ### `Indexable`
 
@@ -265,7 +265,7 @@ Trait for objects that support indexing or retrieving by `numeric` or `string` i
 import { Indexable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/indexable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/indexable.trait.ts)
 
 ### `Measurable`
 
@@ -275,7 +275,7 @@ Interface for data types that can be measured in terms of size and memory usage,
 import { Measurable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/measurable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/measurable.trait.ts)
 
 ### `Mergeable`
 
@@ -285,7 +285,7 @@ The interface for mergeable data types, which can be combined with other instanc
 import { Mergeable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/mergeable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/mergeable.trait.ts)
 
 ### `Observable`
 
@@ -295,7 +295,7 @@ The interface for observable data types, which allow subscribers to be notified 
 import { Observable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/observable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/observable.trait.ts)
 
 ### `Paginated`
 
@@ -305,7 +305,7 @@ Trait for objects that support pagination.
 import { Paginated } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/paginated.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/paginated.trait.ts)
 
 ### `Persistable`
 
@@ -315,7 +315,7 @@ Trait for objects that can be persisted and restored.
 import { Persistable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/persistable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/persistable.trait.ts)
 
 ### `Printable`
 
@@ -325,7 +325,7 @@ Trait for objects that can be printed as a `string` or in a formatted way.
 import { Printable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/printable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/printable.trait.ts)
 
 ### `Queryable`
 
@@ -335,7 +335,7 @@ Interfaces for data types that can be queried using a defined query format, allo
 import { Queryable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/queryable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/queryable.trait.ts)
 
 ### `Resettable`
 
@@ -345,7 +345,7 @@ Interface for data types that can be reset to an initial value and track if they
 import { Resettable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/resettable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/resettable.trait.ts)
 
 ### `Revertible`
 
@@ -355,7 +355,7 @@ Trait for objects that can revert or undo changes.
 import { Revertible } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/revertible.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/revertible.trait.ts)
 
 ### `Serializable`
 
@@ -365,7 +365,7 @@ Serializable interface for data types that can be serialized and deserialized.
 import { Serializable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/serializable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/serializable.trait.ts)
 
 ### `Timestamped`
 
@@ -375,7 +375,7 @@ Interface representing timestamped data.
 import { Timestamped } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/timestamped.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/timestamped.trait.ts)
 
 ### `Transformable`
 
@@ -385,7 +385,7 @@ Transformable interface for data types that can be transformed.
 import { Transformable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/transformable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/transformable.trait.ts)
 
 ### `Validatable`
 
@@ -395,7 +395,7 @@ Interface for data types that can be validated with custom rules and track valid
 import { Validatable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/validatable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/validatable.trait.ts)
 
 ### `Versionable`
 
@@ -405,7 +405,7 @@ The interface for versionable data types, which maintain a history of changes an
 import { Versionable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/versionable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/versionable.trait.ts)
 
 ## Contributing
 
