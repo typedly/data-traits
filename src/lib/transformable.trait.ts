@@ -9,12 +9,6 @@ import { AsyncReturn } from "@typedly/data";
  */
 export interface Transformable<T, R extends boolean = false> {
   /**
-   * @description Clones the `Data` instance.
-   * @returns {AsyncReturn<R, this>} The cloned `Data` instance.
-   */
-  clone(): AsyncReturn<R, this>;
-
-  /**
    * @description Chains transformations with async support.
    * @template U The transformed value type.
    * @param {(value: T) => AsyncReturn<R, U>} fn Async transformation function.
