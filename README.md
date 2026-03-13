@@ -58,7 +58,7 @@ A **TypeScript** type definitions package for configurable data traits, providin
     - [`Freezable`](#freezable)
     - [`Identifiable`](#identifiable)
     - [`Indexable`](#indexable)
-    - [`Measureable`](#measureable)
+    - [`Measurable`](#measurable)
     - [`Mergeable`](#mergeable)
     - [`Observable`](#observable)
     - [`Paginated`](#paginated)
@@ -242,15 +242,15 @@ import { Indexable } from '@typedly/data-traits';
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/indexable.interface.ts)
 
-### `Measureable`
+### `Measurable`
 
 Interface for data types that can be measured in terms of size and memory usage, allowing for efficient management of resources and optimization of performance.
 
 ```typescript
-import { Measureable } from '@typedly/data-traits';
+import { Measurable } from '@typedly/data-traits';
 ```
 
-[Source](https://github.com/typedly/data-traits/blob/main/src/lib/measureable.interface.ts)
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/measurable.interface.ts)
 
 ### `Mergeable`
 
