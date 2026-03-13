@@ -4,8 +4,8 @@ import { AsyncReturn } from "@typedly/data";
  * @description Trait for objects that support indexing or retrieving by numeric or string index.
  * @export
  * @interface Indexable
- * @template [E=any] 
- * @template [I=number | string] 
+ * @template [E=any] The type of the items in indexed collection.
+ * @template [I=number | string] The type of the index, typically number for arrays or `string` for objects.
  * @template {boolean} [R=false] 
  */
 export interface Indexable<E = any, I = number | string, R extends boolean = false> {  

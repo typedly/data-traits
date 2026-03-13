@@ -5,7 +5,7 @@ import { AsyncReturn } from "@typedly/data";
  * @export
  * @interface Transformable 
  * @template T The type of the value to be transformed.
- * @template {boolean} [R=false]  The async flag, indicating whether the transformation methods are asynchronous.
+ * @template {boolean} [R=false] The async flag, indicating whether the transformation methods are asynchronous.
  */
 export interface Transformable<T, R extends boolean = false> {
   /**
