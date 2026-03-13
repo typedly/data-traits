@@ -1,5 +1,6 @@
 // Type.
 import { AsyncReturn } from "@typedly/data";
+// Interface.
 import { Revertible } from "./revertible.trait";
 /**
  * @description The interface for versionable data types, which maintain a history of changes and can revert to previous versions.
