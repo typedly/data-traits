@@ -18,6 +18,8 @@ A **TypeScript** type definitions package for configurable data traits, providin
 
 - **Adaptable**: Use custom adapters to define how data is stored and retrieved (localStorage, API, memory, etc.)
 - **Cacheable**: Built-in caching support with configurable expiration and refresh capabilities
+- **Cleanable**: Clear data, and cleanup resources
+- **Cloneable**: Create deep, or shallow copies of data instances
 - **Collection**: Base collection shape
 - **Comparable**: Compare data instances for equality and ordering
 - **Compressible**: Compress and decompress data
@@ -31,14 +33,14 @@ A **TypeScript** type definitions package for configurable data traits, providin
 - **Mergeable**: Merge data from multiple sources with customizable merge strategies
 - **Observable**: Subscribe to data changes with reactive programming support
 - **Paginated**: Navigate large datasets with page-based chunking and iteration
-- **Persistable**: Persist data to storage automatically with save/load capabilities
+- **Persistable**: Persist data to storage automatically with **save**/**load** capabilities
 - **Printable**: Format and output data in human-readable formats for display or debugging
 - **Queryable**: Query and filter complex data structures with predicate functions
 - **Resettable**: Reset data to initial state and track modifications
 - **Revertible**: Undo changes and revert to previous states with rollback support
 - **Serializable**: Serialize and deserialize data values with async support
 - **Timestamped**: Automatic tracking of creation, modification, and access times
-- **Transformable**: Transform data with map, clone, and functional operations
+- **Transformable**: Transform values with `map` and `flatMap` operations
 - **Validatable**: Comprehensive validation system with custom validators and error reporting
 - **Versionable**: Version control with history tracking, snapshots, and rollback support
 
@@ -50,6 +52,9 @@ A **TypeScript** type definitions package for configurable data traits, providin
   - Interface
     - [`Adaptable`](#adaptable)
     - [`Cacheable`](#cacheable)
+    - [`Cleanable`](#cleanable)
+    - [`Cloneable`](#cloneable)
+    - [`Collection`](#collection)
     - [`Comparable`](#comparable)
     - [`Compressible`](#compressible)
     - [`Configurable`](#configurable)
@@ -151,6 +156,26 @@ import { Cacheable } from '@typedly/data-traits';
 ```
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/cacheable.interface.ts)
+
+### `Cleanable`
+
+Capability for objects that can be cleaned or cleared.
+
+```typescript
+import { Cleanable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/cleanable.interface.ts)
+
+### `Cloneable`
+
+Capability for objects that can be cloned.
+
+```typescript
+import { Cloneable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/cloneable.interface.ts)
 
 ### `Collection`
 
