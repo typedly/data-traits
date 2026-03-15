@@ -51,6 +51,7 @@ A **TypeScript** type definitions package for configurable data traits, providin
 - **Serializable**: Serialize and deserialize data values with async support
 - **Timestamped**: Automatic tracking of creation, modification, and access times
 - **Transformable**: Transform values with `map` and `flatMap` operations
+- **Traversable**: Adds required iterable iterator, and optional async iterable iterator
 - **Validatable**: Comprehensive validation system with custom validators and error reporting
 - **Versionable**: Version control with history tracking, snapshots, and rollback support
 
@@ -85,6 +86,7 @@ A **TypeScript** type definitions package for configurable data traits, providin
     - [`Serializable`](#serializable)
     - [`Timestamped`](#timestamped)
     - [`Transformable`](#transformable)
+    - [`Traversable`](#traversable)
     - [`Validatable`](#validatable)
     - [`Versionable`](#versionable)
 - [Contributing](#contributing)
@@ -140,6 +142,7 @@ import {
   Serializable,
   Timestamped,
   Transformable,
+  Traversable,
   Validatable,
   Versionable,
 } from '@typedly/data-traits';
@@ -396,6 +399,16 @@ import { Transformable } from '@typedly/data-traits';
 ```
 
 [Source](https://github.com/typedly/data-traits/blob/main/src/lib/transformable.trait.ts)
+
+### `Traversable`
+
+Capability for objects that can be traversed/iterated.
+
+```typescript
+import { Traversable } from '@typedly/data-traits';
+```
+
+[Source](https://github.com/typedly/data-traits/blob/main/src/lib/traversable.trait.ts)
 
 ### `Validatable`
 
