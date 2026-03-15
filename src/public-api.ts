@@ -39,6 +39,7 @@ export type {
 
   Timestamped,
   Transformable,
+  Traversable,
 
   Validatable,
   Versionable,
