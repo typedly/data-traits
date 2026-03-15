@@ -23,5 +23,6 @@ export type { Revertible } from './revertible.trait';
 export type { Serializable } from './serializable.trait';
 export type { Timestamped } from './timestamped.trait';
 export type { Transformable } from './transformable.trait';
+export type { Traversable } from './traversable.trait';
 export type { Validatable } from './validatable.trait';
 export type { Versionable } from './versionable.trait';
